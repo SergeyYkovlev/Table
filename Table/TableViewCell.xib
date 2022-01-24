@@ -15,20 +15,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="487" height="193"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V78-47-bZm">
-                        <rect key="frame" x="10" y="10" width="129" height="173"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V78-47-bZm">
+                        <rect key="frame" x="10" y="10" width="173" height="173"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="V78-47-bZm" secondAttribute="height" multiplier="129:173" id="rPw-gS-qzD"/>
+                            <constraint firstAttribute="width" secondItem="V78-47-bZm" secondAttribute="height" multiplier="1:1" id="rPw-gS-qzD"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBU-HO-pCk">
-                        <rect key="frame" x="149" y="10" width="328" height="148"/>
+                        <rect key="frame" x="193" y="10" width="284" height="148"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idU-vA-pyl">
-                        <rect key="frame" x="149" y="168" width="328" height="15"/>
+                        <rect key="frame" x="193" y="168" width="284" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="GG6-8E-oUc"/>
                         </constraints>

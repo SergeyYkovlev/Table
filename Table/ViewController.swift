@@ -8,7 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var result: UILabel!
     @IBOutlet weak var TextField: UITextField!
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
+    
     @IBAction func buttonColor(_ sender: Any) {
         nextImage += 1
         image.image = fonImage[nextImage%3]
