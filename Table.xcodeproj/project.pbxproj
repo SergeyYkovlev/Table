@@ -28,6 +28,7 @@
 		0CBBAF8C279FF55A00723957 /* ShowCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBBAF8B279FF55A00723957 /* ShowCollectionViewController.xib */; };
 		0CBBAF8E27A007F700723957 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAF8D27A007F700723957 /* TextViewController.swift */; };
 		0CBBAF9027A0080800723957 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBBAF8F27A0080800723957 /* TextViewController.xib */; };
+		0CBBAF9327A00FB900723957 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAF9227A00FB800723957 /* ImageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		0CBBAF8B279FF55A00723957 /* ShowCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowCollectionViewController.xib; sourceTree = "<group>"; };
 		0CBBAF8D27A007F700723957 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		0CBBAF8F27A0080800723957 /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
+		0CBBAF9227A00FB800723957 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				0CBBAF4E279A84AC00723957 /* SceneDelegate.swift */,
 				0CBBAF4C279A84AC00723957 /* AppDelegate.swift */,
 				0CBBAF57279A84AE00723957 /* LaunchScreen.storyboard */,
+				0CBBAF9427A01FFF00723957 /* Service */,
 				0CBBAF83279FA60200723957 /* Models */,
 				0CBBAF80279EBCF700723957 /* TableViewController */,
 				0CBBAF81279FA58B00723957 /* CollectionViewController */,
@@ -158,6 +161,14 @@
 				0CBBAF8D27A007F700723957 /* TextViewController.swift */,
 			);
 			path = TextViewController;
+			sourceTree = "<group>";
+		};
+		0CBBAF9427A01FFF00723957 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0CBBAF9227A00FB800723957 /* ImageService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +254,7 @@
 				0CBBAF8A279FF53100723957 /* ShowCollectionViewController.swift in Sources */,
 				0CBBAF71279E6AD600723957 /* TableViewCell.swift in Sources */,
 				0CBBAF51279A84AC00723957 /* ViewController.swift in Sources */,
+				0CBBAF9327A00FB900723957 /* ImageService.swift in Sources */,
 				0CBBAF7D279E877500723957 /* CollectionViewCell.swift in Sources */,
 				0CBBAF4D279A84AC00723957 /* AppDelegate.swift in Sources */,
 				0CBBAF67279E5A1200723957 /* TableViewController.swift in Sources */,
