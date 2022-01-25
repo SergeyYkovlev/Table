@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowInfoViewController" customModule="Table" customModuleProvider="target">
             <connections>
+                <outlet property="header" destination="6YW-Yt-P88" id="5bV-qs-oSe"/>
+                <outlet property="infoImage" destination="ou0-Uk-rjD" id="VhW-rr-w7h"/>
+                <outlet property="text" destination="IJX-8J-v5F" id="7ap-Ej-aHQ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="PN6-48-i3Z"/>
             </connections>
         </placeholder>

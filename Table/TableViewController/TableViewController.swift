@@ -48,7 +48,8 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let secondViewController = ShowInfoViewConroller(nibName: "ShowInfoViewController", bundle: nil)
+        let secondViewController = ShowInfoViewController(imageModel: images[indexPath.row])
+//        secondViewController.infoImage.image = images[indexPath.row].image
         self.present(secondViewController, animated: true, completion: nil)
         tableView.deselectRow(at: indexPath, animated: true)
     }
