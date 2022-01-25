@@ -24,6 +24,8 @@
 		0CBBAF7F279EA7EE00723957 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAF7E279EA7EE00723957 /* ImageModel.swift */; };
 		0CBBAF85279FACB200723957 /* ShowInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBBAF84279FACB200723957 /* ShowInfoViewController.xib */; };
 		0CBBAF87279FACC900723957 /* ShowInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAF86279FACC900723957 /* ShowInfoViewController.swift */; };
+		0CBBAF8A279FF53100723957 /* ShowCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAF89279FF53000723957 /* ShowCollectionViewController.swift */; };
+		0CBBAF8C279FF55A00723957 /* ShowCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBBAF8B279FF55A00723957 /* ShowCollectionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		0CBBAF7E279EA7EE00723957 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		0CBBAF84279FACB200723957 /* ShowInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowInfoViewController.xib; sourceTree = "<group>"; };
 		0CBBAF86279FACC900723957 /* ShowInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInfoViewController.swift; sourceTree = "<group>"; };
+		0CBBAF89279FF53000723957 /* ShowCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCollectionViewController.swift; sourceTree = "<group>"; };
+		0CBBAF8B279FF55A00723957 /* ShowCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowCollectionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 				0CBBAF57279A84AE00723957 /* LaunchScreen.storyboard */,
 				0CBBAF88279FD37A00723957 /* ShowinfoViewController */,
 				0CBBAF55279A84AE00723957 /* Assets.xcassets */,
+				0CBBAF8B279FF55A00723957 /* ShowCollectionViewController.xib */,
+				0CBBAF89279FF53000723957 /* ShowCollectionViewController.swift */,
 				0CBBAF5A279A84AE00723957 /* Info.plist */,
 			);
 			path = Table;
@@ -202,6 +208,7 @@
 				0CBBAF59279A84AE00723957 /* LaunchScreen.storyboard in Resources */,
 				0CBBAF7B279E876400723957 /* ColectionViewCell.xib in Resources */,
 				0CBBAF6F279E6AA600723957 /* TableViewCell.xib in Resources */,
+				0CBBAF8C279FF55A00723957 /* ShowCollectionViewController.xib in Resources */,
 				0CBBAF61279A889000723957 /* ViewController.xib in Resources */,
 				0CBBAF56279A84AE00723957 /* Assets.xcassets in Resources */,
 				0CBBAF69279E5A4000723957 /* TableViewController.xib in Resources */,
@@ -217,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CBBAF77279E843A00723957 /* CollectionViewController.swift in Sources */,
+				0CBBAF8A279FF53100723957 /* ShowCollectionViewController.swift in Sources */,
 				0CBBAF71279E6AD600723957 /* TableViewCell.swift in Sources */,
 				0CBBAF51279A84AC00723957 /* ViewController.swift in Sources */,
 				0CBBAF7D279E877500723957 /* CollectionViewCell.swift in Sources */,

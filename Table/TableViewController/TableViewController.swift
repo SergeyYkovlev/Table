@@ -25,8 +25,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
-//        tableView.register(UINib(nibName: "ShowInfoViewController", bundle: nil), forCellReuseIdentifier: "ShowInfoViewController")
-    
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,10 +38,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.myImage.image = images[indexPath.row].image
         cell.telefon.text = images[indexPath.row].subtext
         
-        
-        
-//        self.performSegue(withIdentifier: "ShowInfo", sender: nil)
-//
         return(cell)
     }
     
