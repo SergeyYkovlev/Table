@@ -25,6 +25,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+//        tableView.register(UINib(nibName: "ShowInfoViewController", bundle: nil), forCellReuseIdentifier: "ShowInfoViewController")
     
     }
     
@@ -34,12 +35,24 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
-        
+    
         cell.myLabel.text = images[indexPath.row].text
         cell.myImage.image = images[indexPath.row].image
         cell.telefon.text = images[indexPath.row].subtext
+        
+        
+        
+//        self.performSegue(withIdentifier: "ShowInfo", sender: nil)
+//
         return(cell)
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let secondViewController = ShowInfoViewConroller(nibName: "ShowInfoViewController", bundle: nil)
+        self.present(secondViewController, animated: true, completion: nil)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100

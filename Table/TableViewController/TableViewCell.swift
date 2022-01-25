@@ -13,4 +13,8 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var telefon: UILabel!
     @IBOutlet weak var myLabel: UILabel!
     @IBOutlet weak var myImage: UIImageView!
+    
 }
+
+
+
