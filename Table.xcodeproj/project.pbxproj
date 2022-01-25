@@ -26,6 +26,8 @@
 		0CBBAF87279FACC900723957 /* ShowInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAF86279FACC900723957 /* ShowInfoViewController.swift */; };
 		0CBBAF8A279FF53100723957 /* ShowCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAF89279FF53000723957 /* ShowCollectionViewController.swift */; };
 		0CBBAF8C279FF55A00723957 /* ShowCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBBAF8B279FF55A00723957 /* ShowCollectionViewController.xib */; };
+		0CBBAF8E27A007F700723957 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAF8D27A007F700723957 /* TextViewController.swift */; };
+		0CBBAF9027A0080800723957 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBBAF8F27A0080800723957 /* TextViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		0CBBAF86279FACC900723957 /* ShowInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowInfoViewController.swift; sourceTree = "<group>"; };
 		0CBBAF89279FF53000723957 /* ShowCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCollectionViewController.swift; sourceTree = "<group>"; };
 		0CBBAF8B279FF55A00723957 /* ShowCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowCollectionViewController.xib; sourceTree = "<group>"; };
+		0CBBAF8D27A007F700723957 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		0CBBAF8F27A0080800723957 /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,12 +88,13 @@
 			children = (
 				0CBBAF4E279A84AC00723957 /* SceneDelegate.swift */,
 				0CBBAF4C279A84AC00723957 /* AppDelegate.swift */,
-				0CBBAF83279FA60200723957 /* Moedels */,
+				0CBBAF57279A84AE00723957 /* LaunchScreen.storyboard */,
+				0CBBAF83279FA60200723957 /* Models */,
 				0CBBAF80279EBCF700723957 /* TableViewController */,
 				0CBBAF81279FA58B00723957 /* CollectionViewController */,
 				0CBBAF82279FA5B200723957 /* ViewController */,
-				0CBBAF57279A84AE00723957 /* LaunchScreen.storyboard */,
 				0CBBAF88279FD37A00723957 /* ShowinfoViewController */,
+				0CBBAF9127A00BB500723957 /* TextViewController */,
 				0CBBAF55279A84AE00723957 /* Assets.xcassets */,
 				0CBBAF5A279A84AE00723957 /* Info.plist */,
 			);
@@ -129,12 +134,12 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		0CBBAF83279FA60200723957 /* Moedels */ = {
+		0CBBAF83279FA60200723957 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				0CBBAF7E279EA7EE00723957 /* ImageModel.swift */,
 			);
-			path = Moedels;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		0CBBAF88279FD37A00723957 /* ShowinfoViewController */ = {
@@ -144,6 +149,15 @@
 				0CBBAF84279FACB200723957 /* ShowInfoViewController.xib */,
 			);
 			path = ShowinfoViewController;
+			sourceTree = "<group>";
+		};
+		0CBBAF9127A00BB500723957 /* TextViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0CBBAF8F27A0080800723957 /* TextViewController.xib */,
+				0CBBAF8D27A007F700723957 /* TextViewController.swift */,
+			);
+			path = TextViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CBBAF79279E845300723957 /* CollectionViewController.xib in Resources */,
+				0CBBAF9027A0080800723957 /* TextViewController.xib in Resources */,
 				0CBBAF59279A84AE00723957 /* LaunchScreen.storyboard in Resources */,
 				0CBBAF7B279E876400723957 /* ColectionViewCell.xib in Resources */,
 				0CBBAF6F279E6AA600723957 /* TableViewCell.xib in Resources */,
@@ -223,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CBBAF8E27A007F700723957 /* TextViewController.swift in Sources */,
 				0CBBAF77279E843A00723957 /* CollectionViewController.swift in Sources */,
 				0CBBAF8A279FF53100723957 /* ShowCollectionViewController.swift in Sources */,
 				0CBBAF71279E6AD600723957 /* TableViewCell.swift in Sources */,

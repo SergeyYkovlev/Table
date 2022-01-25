@@ -13,6 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var viewController: ViewController?
     var tableViewConrtoller: TableViewController?
     var collectionViewController: CollectionViewController?
+    var textViewController: TextViewController?
     
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -21,26 +22,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.viewController = ViewController()
         self.tableViewConrtoller = TableViewController()
         self.collectionViewController = CollectionViewController()
+        self.textViewController = TextViewController()
         
         let tabBarController = UITabBarController()
         
-        tabBarController.viewControllers = [viewController!, tableViewConrtoller!, collectionViewController!]
+        tabBarController.viewControllers = [viewController!, tableViewConrtoller!, collectionViewController!, textViewController!]
         
-        let item1 = UITabBarItem(title: "Фон", image: UIImage(named: "jkj"), tag: 0)
-        let item2 = UITabBarItem(title: "Таблица", image: UIImage(named: "rtr"), tag: 1)
-        let item3 = UITabBarItem(title: "Коллекция", image: UIImage(named: "qwe"), tag: 2)
+        let item1 = UITabBarItem(title: "Фон", image: UIImage(named: "rtr"), tag: 0)
+        let item2 = UITabBarItem(title: "Таблица", image: UIImage(named: "knb"), tag: 1)
+        let item3 = UITabBarItem(title: "Коллекция", image: UIImage(named: "jkj"), tag: 2)
+        let item4 = UITabBarItem(title: "Текст", image: UIImage(named: "qwe"), tag: 3)
+        
         
         UITabBar.appearance().tintColor = UIColor.white.withAlphaComponent(0.5)
         //UITabBar.appearance().barTintColor = UIColor.red.withAlphaComponent(0.5)
         UITabBar.appearance().backgroundColor = UIColor.darkGray.withAlphaComponent(0.5)
         UITabBar.appearance().unselectedItemTintColor = UIColor.white
         
-        
-        
-        
         viewController?.tabBarItem = item1
         tableViewConrtoller?.tabBarItem = item2
         collectionViewController?.tabBarItem = item3
+        textViewController?.tabBarItem = item4
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         guard let _ = (scene as? UIWindowScene) else { return }
