@@ -91,8 +91,6 @@
 				0CBBAF57279A84AE00723957 /* LaunchScreen.storyboard */,
 				0CBBAF88279FD37A00723957 /* ShowinfoViewController */,
 				0CBBAF55279A84AE00723957 /* Assets.xcassets */,
-				0CBBAF8B279FF55A00723957 /* ShowCollectionViewController.xib */,
-				0CBBAF89279FF53000723957 /* ShowCollectionViewController.swift */,
 				0CBBAF5A279A84AE00723957 /* Info.plist */,
 			);
 			path = Table;
@@ -116,6 +114,8 @@
 				0CBBAF78279E845300723957 /* CollectionViewController.xib */,
 				0CBBAF7C279E877500723957 /* CollectionViewCell.swift */,
 				0CBBAF7A279E876400723957 /* ColectionViewCell.xib */,
+				0CBBAF8B279FF55A00723957 /* ShowCollectionViewController.xib */,
+				0CBBAF89279FF53000723957 /* ShowCollectionViewController.swift */,
 			);
 			path = CollectionViewController;
 			sourceTree = "<group>";
