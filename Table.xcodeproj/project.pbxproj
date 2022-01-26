@@ -29,6 +29,8 @@
 		0CBBAF8E27A007F700723957 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAF8D27A007F700723957 /* TextViewController.swift */; };
 		0CBBAF9027A0080800723957 /* TextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBBAF8F27A0080800723957 /* TextViewController.xib */; };
 		0CBBAF9327A00FB900723957 /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAF9227A00FB800723957 /* ImageService.swift */; };
+		0CBBAF9627A113B200723957 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAF9527A113B200723957 /* LoginViewController.swift */; };
+		0CBBAF9827A113CA00723957 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CBBAF9727A113CA00723957 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		0CBBAF8D27A007F700723957 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		0CBBAF8F27A0080800723957 /* TextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewController.xib; sourceTree = "<group>"; };
 		0CBBAF9227A00FB800723957 /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		0CBBAF9527A113B200723957 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0CBBAF9727A113CA00723957 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				0CBBAF4E279A84AC00723957 /* SceneDelegate.swift */,
+				0CBBAF9527A113B200723957 /* LoginViewController.swift */,
+				0CBBAF9727A113CA00723957 /* LoginViewController.xib */,
 				0CBBAF4C279A84AC00723957 /* AppDelegate.swift */,
 				0CBBAF57279A84AE00723957 /* LaunchScreen.storyboard */,
 				0CBBAF9427A01FFF00723957 /* Service */,
@@ -231,6 +237,7 @@
 			files = (
 				0CBBAF79279E845300723957 /* CollectionViewController.xib in Resources */,
 				0CBBAF9027A0080800723957 /* TextViewController.xib in Resources */,
+				0CBBAF9827A113CA00723957 /* LoginViewController.xib in Resources */,
 				0CBBAF59279A84AE00723957 /* LaunchScreen.storyboard in Resources */,
 				0CBBAF7B279E876400723957 /* ColectionViewCell.xib in Resources */,
 				0CBBAF6F279E6AA600723957 /* TableViewCell.xib in Resources */,
@@ -260,6 +267,7 @@
 				0CBBAF67279E5A1200723957 /* TableViewController.swift in Sources */,
 				0CBBAF4F279A84AC00723957 /* SceneDelegate.swift in Sources */,
 				0CBBAF7F279EA7EE00723957 /* ImageModel.swift in Sources */,
+				0CBBAF9627A113B200723957 /* LoginViewController.swift in Sources */,
 				0CBBAF87279FACC900723957 /* ShowInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

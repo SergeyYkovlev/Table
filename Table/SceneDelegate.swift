@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var tableViewConrtoller: TableViewController?
     var collectionViewController: CollectionViewController?
     var textViewController: TextViewController?
-    
+    var loginViewController: LoginViewController?
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
@@ -23,15 +23,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.tableViewConrtoller = TableViewController()
         self.collectionViewController = CollectionViewController()
         self.textViewController = TextViewController()
+        self.loginViewController = LoginViewController()
         
         let tabBarController = UITabBarController()
         
-        tabBarController.viewControllers = [viewController!, tableViewConrtoller!, collectionViewController!, textViewController!]
+        tabBarController.viewControllers = [viewController!, tableViewConrtoller!, collectionViewController!, textViewController!,loginViewController! ]
         
         let item1 = UITabBarItem(title: "Фон", image: UIImage(named: "rtr"), tag: 0)
         let item2 = UITabBarItem(title: "Таблица", image: UIImage(named: "knb"), tag: 1)
         let item3 = UITabBarItem(title: "Коллекция", image: UIImage(named: "jkj"), tag: 2)
         let item4 = UITabBarItem(title: "Текст", image: UIImage(named: "qwe"), tag: 3)
+        let item5 = UITabBarItem(title: "Вход", image: nil, tag: 4)
         
         
         UITabBar.appearance().tintColor = UIColor.white.withAlphaComponent(0.5)
@@ -43,6 +45,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         tableViewConrtoller?.tabBarItem = item2
         collectionViewController?.tabBarItem = item3
         textViewController?.tabBarItem = item4
+        loginViewController?.tabBarItem = item5
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         guard let _ = (scene as? UIWindowScene) else { return }
