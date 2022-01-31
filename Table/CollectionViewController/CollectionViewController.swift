@@ -10,8 +10,6 @@ import UIKit
 
 class CollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    @IBOutlet weak var collectionView: UICollectionView!
-    
     var imageService: ImageService = ImageService.shared
 
     override func viewDidLoad() {
@@ -19,6 +17,10 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         collectionView.register(UINib(nibName: "ColectionViewCell", bundle: nil), forCellWithReuseIdentifier: "galery")
         
     }
+    
+    // MARK: - Subviews
+    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imageService.images.count

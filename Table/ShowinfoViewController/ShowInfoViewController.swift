@@ -10,10 +10,6 @@ import UIKit
 
 class ShowInfoViewController: UIViewController {
     
-    @IBOutlet weak var infoImage: UIImageView!
-    @IBOutlet weak var header: UILabel!
-    @IBOutlet weak var text: UILabel!
-    
     var imageModel: ImageModel
     
     init(imageModel: ImageModel) {
@@ -32,5 +28,11 @@ class ShowInfoViewController: UIViewController {
         header.text = imageModel.text
         text.text = imageModel.subtext
     }
+    
+    // MARK: - Subviews
+    
+    @IBOutlet weak var infoImage: UIImageView!
+    @IBOutlet weak var header: UILabel!
+    @IBOutlet weak var text: UILabel!
     
 }

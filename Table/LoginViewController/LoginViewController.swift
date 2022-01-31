@@ -52,8 +52,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var warningPasswordLabel: UILabel!
     
     @objc func firstNameTextFieldDidChange(textField: UITextField) {
-        print(textField.text)
-        
         clearFirstNameButton.isHidden = false
         firsNameTextField.backgroundColor = .systemGray
         warningFirstNameLabel.text = ""
@@ -110,6 +108,45 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    
+    @IBAction func clearFirstName(_ sender: Any) {
+        firsNameTextField.text = ""
+        firsNameTextField.backgroundColor = .systemGray
+        warningFirstNameLabel.text = ""
+        clearFirstNameButton.isHidden = true
+    }
+    
+    @IBAction func clearLastName(_ sender: Any) {
+        lastNameTextField.text = ""
+        lastNameTextField.backgroundColor = .systemGray
+        warningLastNameLabel.text = ""
+        clearLastNameButton.isHidden = true
+    }
+    
+    @IBAction func clearPassword(_ sender: Any) {
+        passwordTextField.text = ""
+        passwordTextField.backgroundColor = .systemGray
+        warningPasswordLabel.text = ""
+        clearPasswordButton.isHidden = true
+    }
+    
+    @IBAction func clearEmail(_ sender: Any) {
+        emailTextField.text = ""
+        emailTextField.backgroundColor = .systemGray
+        warningEmailLabel.text = ""
+        clearEmailButton.isHidden = true
+    }
+    
+    @IBAction func send(_ sender: Any) {
+        firstName()
+        lastName()
+        if let text = emailTextField.text {
+            email(str: text)
+        }
+        password()
+    }
+    
+    // MARK: - Private
     func firstName() {
         if firsNameTextField.text?.isEmpty ?? true {
             warningFirstNameLabel.text = "это поле не может быть пустым"
@@ -175,44 +212,4 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let emailPred = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: str)
     }
-    
-    @IBAction func clearFirstName(_ sender: Any) {
-        firsNameTextField.text = ""
-        firsNameTextField.backgroundColor = .systemGray
-        warningFirstNameLabel.text = ""
-        clearFirstNameButton.isHidden = true
-    }
-    
-    @IBAction func clearLastName(_ sender: Any) {
-        lastNameTextField.text = ""
-        lastNameTextField.backgroundColor = .systemGray
-        warningLastNameLabel.text = ""
-        clearLastNameButton.isHidden = true
-    }
-    
-    @IBAction func clearPassword(_ sender: Any) {
-        passwordTextField.text = ""
-        passwordTextField.backgroundColor = .systemGray
-        warningPasswordLabel.text = ""
-        clearPasswordButton.isHidden = true
-    }
-    
-    @IBAction func clearEmail(_ sender: Any) {
-        emailTextField.text = ""
-        emailTextField.backgroundColor = .systemGray
-        warningEmailLabel.text = ""
-        clearEmailButton.isHidden = true
-    }
-    
-    @IBAction func send(_ sender: Any) {
-        firstName()
-        lastName()
-        if let text = emailTextField.text {
-            email(str: text)
-        }
-        
-        password()
-       
-    }
-    
 }

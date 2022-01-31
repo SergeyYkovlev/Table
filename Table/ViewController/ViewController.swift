@@ -9,10 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var result: UILabel!
-    @IBOutlet weak var TextField: UITextField!
-    
     var nextImage = 0
     var fonImage : [UIImage] = [
         UIImage(named: "png.png")!,
@@ -22,8 +18,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+    
+    // MARK: - Subviews
+    
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var TextField: UITextField!
+    
+    // MARK: - Action
     
     @IBAction func buttonColor(_ sender: Any) {
         nextImage += 1

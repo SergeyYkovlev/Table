@@ -10,8 +10,6 @@ import UIKit
 
 class ShowCollectionViewController: UIViewController {
     
-    @IBOutlet weak var showImage: UIImageView!
-
     var imageModel: ImageModel
     init(imageModel: ImageModel) {
         self.imageModel = imageModel
@@ -25,4 +23,9 @@ class ShowCollectionViewController: UIViewController {
         super.viewDidLoad()
         showImage.image = imageModel.image
     }
+    
+    // MARK: - Subviews
+    
+    @IBOutlet weak var showImage: UIImageView!
+
 }
